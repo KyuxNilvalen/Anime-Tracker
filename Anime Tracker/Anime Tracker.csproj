@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,6 +63,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="animeList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>animeList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="animeListDataSet.cs">
+      <DependentUpon>animeListDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="animeListDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,6 +96,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="animeList.xsc">
+      <DependentUpon>animeList.xsd</DependentUpon>
+    </None>
+    <None Include="animeList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>animeList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="animeList.xss">
+      <DependentUpon>animeList.xsd</DependentUpon>
+    </None>
     <None Include="animeListDataSet.xsc">
       <DependentUpon>animeListDataSet.xsd</DependentUpon>
     </None>
