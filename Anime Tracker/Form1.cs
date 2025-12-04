@@ -123,11 +123,6 @@ namespace Anime_Tracker
             //passed all checks
             return true;
         }
-
-        private void saveButton_Click(object sender, EventArgs e)
-        {
-            
-        }
         private void updateButton_Click(object sender, EventArgs e)
         {
             if (!checkTextBoxes(nameTextBox, typeTextBox, scoreTextBox, epTextBox, totalEpTextBox))
