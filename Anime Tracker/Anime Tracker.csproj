@@ -148,10 +148,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="animeList.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="animeList_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>animeList.mdf</DependentUpon>
     </Content>
   </ItemGroup>

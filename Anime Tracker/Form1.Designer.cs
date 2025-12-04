@@ -64,7 +64,6 @@
             this.epTextBox = new System.Windows.Forms.TextBox();
             this.totalEpTextBox = new System.Windows.Forms.TextBox();
             this.typeTextBox = new System.Windows.Forms.TextBox();
-            this.saveButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.animeListTableAdapter = new Anime_Tracker.animeListDataSetTableAdapters.animeListTableAdapter();
@@ -84,7 +83,7 @@
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(507, 81);
+            nameLabel.Location = new System.Drawing.Point(469, 46);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(38, 13);
             nameLabel.TabIndex = 4;
@@ -93,7 +92,7 @@
             // scoreLabel
             // 
             scoreLabel.AutoSize = true;
-            scoreLabel.Location = new System.Drawing.Point(725, 107);
+            scoreLabel.Location = new System.Drawing.Point(687, 72);
             scoreLabel.Name = "scoreLabel";
             scoreLabel.Size = new System.Drawing.Size(38, 13);
             scoreLabel.TabIndex = 8;
@@ -102,7 +101,7 @@
             // epLabel
             // 
             epLabel.AutoSize = true;
-            epLabel.Location = new System.Drawing.Point(631, 137);
+            epLabel.Location = new System.Drawing.Point(593, 102);
             epLabel.Name = "epLabel";
             epLabel.Size = new System.Drawing.Size(33, 13);
             epLabel.TabIndex = 10;
@@ -111,7 +110,7 @@
             // totalEpLabel
             // 
             totalEpLabel.AutoSize = true;
-            totalEpLabel.Location = new System.Drawing.Point(713, 137);
+            totalEpLabel.Location = new System.Drawing.Point(675, 102);
             totalEpLabel.Name = "totalEpLabel";
             totalEpLabel.Size = new System.Drawing.Size(50, 13);
             totalEpLabel.TabIndex = 12;
@@ -120,7 +119,7 @@
             // typeLabel
             // 
             typeLabel.AutoSize = true;
-            typeLabel.Location = new System.Drawing.Point(512, 107);
+            typeLabel.Location = new System.Drawing.Point(474, 72);
             typeLabel.Name = "typeLabel";
             typeLabel.Size = new System.Drawing.Size(34, 13);
             typeLabel.TabIndex = 6;
@@ -132,14 +131,14 @@
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.Location = new System.Drawing.Point(12, 29);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(155, 36);
+            this.titleLabel.Size = new System.Drawing.Size(271, 36);
             this.titleLabel.TabIndex = 1;
-            this.titleLabel.Text = "My Anime";
+            this.titleLabel.Text = "My Anime Tracker";
             // 
             // versionLabel
             // 
             this.versionLabel.AutoSize = true;
-            this.versionLabel.Location = new System.Drawing.Point(123, 65);
+            this.versionLabel.Location = new System.Drawing.Point(239, 65);
             this.versionLabel.Name = "versionLabel";
             this.versionLabel.Size = new System.Drawing.Size(44, 13);
             this.versionLabel.TabIndex = 2;
@@ -293,9 +292,9 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.animeListDataGridView.DataSource = this.animeListBindingSource;
-            this.animeListDataGridView.Location = new System.Drawing.Point(18, 81);
+            this.animeListDataGridView.Location = new System.Drawing.Point(18, 102);
             this.animeListDataGridView.Name = "animeListDataGridView";
-            this.animeListDataGridView.Size = new System.Drawing.Size(483, 595);
+            this.animeListDataGridView.Size = new System.Drawing.Size(566, 652);
             this.animeListDataGridView.TabIndex = 3;
             // 
             // dataGridViewTextBoxColumn1
@@ -344,7 +343,7 @@
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.animeListBindingSource, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(551, 77);
+            this.nameTextBox.Location = new System.Drawing.Point(513, 42);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(255, 20);
             this.nameTextBox.TabIndex = 5;
@@ -352,7 +351,7 @@
             // scoreTextBox
             // 
             this.scoreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.animeListBindingSource, "Score", true));
-            this.scoreTextBox.Location = new System.Drawing.Point(769, 103);
+            this.scoreTextBox.Location = new System.Drawing.Point(731, 68);
             this.scoreTextBox.Name = "scoreTextBox";
             this.scoreTextBox.Size = new System.Drawing.Size(37, 20);
             this.scoreTextBox.TabIndex = 9;
@@ -360,7 +359,7 @@
             // epTextBox
             // 
             this.epTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.animeListBindingSource, "Ep #", true));
-            this.epTextBox.Location = new System.Drawing.Point(670, 133);
+            this.epTextBox.Location = new System.Drawing.Point(632, 98);
             this.epTextBox.Name = "epTextBox";
             this.epTextBox.Size = new System.Drawing.Size(37, 20);
             this.epTextBox.TabIndex = 11;
@@ -368,7 +367,7 @@
             // totalEpTextBox
             // 
             this.totalEpTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.animeListBindingSource, "Total Ep", true));
-            this.totalEpTextBox.Location = new System.Drawing.Point(769, 133);
+            this.totalEpTextBox.Location = new System.Drawing.Point(731, 98);
             this.totalEpTextBox.Name = "totalEpTextBox";
             this.totalEpTextBox.Size = new System.Drawing.Size(37, 20);
             this.totalEpTextBox.TabIndex = 13;
@@ -376,25 +375,14 @@
             // typeTextBox
             // 
             this.typeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.animeListBindingSource, "Type", true));
-            this.typeTextBox.Location = new System.Drawing.Point(551, 103);
+            this.typeTextBox.Location = new System.Drawing.Point(513, 68);
             this.typeTextBox.Name = "typeTextBox";
             this.typeTextBox.Size = new System.Drawing.Size(168, 20);
             this.typeTextBox.TabIndex = 7;
             // 
-            // saveButton
-            // 
-            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.Location = new System.Drawing.Point(227, 31);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(133, 35);
-            this.saveButton.TabIndex = 16;
-            this.saveButton.Text = "&Save Table";
-            this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
-            // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(731, 159);
+            this.updateButton.Location = new System.Drawing.Point(693, 124);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(75, 23);
             this.updateButton.TabIndex = 15;
@@ -404,7 +392,7 @@
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(628, 159);
+            this.addButton.Location = new System.Drawing.Point(590, 124);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(91, 23);
             this.addButton.TabIndex = 14;
@@ -430,7 +418,6 @@
             this.ClientSize = new System.Drawing.Size(824, 850);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.updateButton);
-            this.Controls.Add(this.saveButton);
             this.Controls.Add(nameLabel);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(scoreLabel);
@@ -492,7 +479,6 @@
         private System.Windows.Forms.TextBox epTextBox;
         private System.Windows.Forms.TextBox totalEpTextBox;
         private System.Windows.Forms.TextBox typeTextBox;
-        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Button addButton;
     }
